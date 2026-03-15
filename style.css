@@ -1,0 +1,224 @@
+body{
+  margin:0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height:1.7;
+  color:#333;
+}
+
+/* ヘッダー */
+header{
+  padding:20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+}
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:22px;
+  font-weight: bold;
+}
+
+.hamburger{
+  font-size:24px;
+  cursor:pointer;
+}
+
+/* ヒーロー */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+  margin-top: 80px;
+  background:linear-gradient(135deg,#f8fafc,#e9eef6);
+}
+
+.hero-inner h2{
+  font-size:38px;
+  margin-bottom:20px;
+  line-height: 1.4;
+}
+
+.hero-inner p{
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 16px;
+  margin-bottom:35px;
+  line-height:1.8;
+  color: #555;
+}
+
+.cta-btn{
+  display:inline-block;
+  padding:16px 34px;
+  background:#3b82f6;
+  color:#fff;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background:#2563eb;
+  transform:translateY(-2px);
+}
+
+/* サービス内容 */
+.services{
+  padding:100px 20px;
+  background:#fff;
+}
+
+.services-inner{
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.services h2{
+  font-size:28px;
+  margin-bottom:50px;
+}
+
+.service-cards{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+}
+
+.card{
+  background: #f8fafc;
+  padding:30px;
+  border-radius:10px;
+  width:300px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 強み */
+.strength{
+  padding:100px 20px;
+  background:#f8fafc;
+}
+
+.strength-inner{
+  max-width:1000px;
+  margin:0 auto;
+  text-align:center;
+}
+
+.strength h2{
+  font-size:28px;
+  margin-bottom:50px;
+}
+
+.strength-cards{
+  display:flex;
+  gap:30px;
+  justify-content:center;
+}
+
+.strength-card{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  width:300px;
+  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+
+/* 相談ボタン */
+.cta{
+  padding:100px 20px;
+  background:#3b82f6;
+  color:white;
+  text-align:center;
+}
+
+.cta-inner{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.cta h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.cta p{
+  margin-bottom:30px;
+  line-height:1.8;
+}
+
+.cta-button{
+  display:inline-block;
+  padding:15px 35px;
+  background:white;
+  color:#3b82f6;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+/* フッター */
+.footer{
+  padding:100px 20px;
+  background:#111;
+  color:white;
+  text-align:center;
+}
+
+.footer-inner{
+  max-width:1000px;
+  margin:0 auto;
+}
+
+.footer p{
+  font-size:14px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px){
+
+  .service-cards{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card{
+    width:70%;
+  }
+
+  .hero-inner h2{
+    font-size:28px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .strength-cards{
+  flex-direction:column;
+  align-items:center;
+}
+
+.strength-card{
+  width:90%;
+}
+}
