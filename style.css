@@ -134,11 +134,16 @@ header{
 }
 
 .strength-card{
-  background:white;
-  padding:30px;
-  border-radius:10px;
-  width:300px;
-  box-shadow:0 15px 30px rgba(0,0,0,0.08);
+background:white;
+padding:30px;
+border-radius:10px;
+width:300px;
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.strength-card:hover{
+transform:translateY(-5px);
 }
 
 
@@ -173,6 +178,11 @@ header{
   text-decoration:none;
   border-radius:8px;
   font-weight:bold;
+  transition:0.3s;
+}
+
+.cta-button:hover{
+  transform:translateY(-3px);
 }
 
 /* フッター */
